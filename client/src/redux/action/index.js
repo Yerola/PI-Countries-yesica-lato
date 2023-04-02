@@ -14,7 +14,7 @@ export const fetchCountry = () => //api-client conn
     async (dispatch) => {
         try {
             const response = await axios
-                .get('http://localhost:3001/api/country');
+                .get('https://restcountries.com/v3/all');
             dispatch({
                 type: FETCH_COUNTRY,
                 payload: response.data
