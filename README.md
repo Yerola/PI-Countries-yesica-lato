@@ -138,16 +138,3 @@ y finalmente crear dicha actividad.
 <br />
 
 Espero que hayan disfrutado de mi proyecto!
-
-<br />
-
----
-
-
-```
-
-
-
-<br />
-
-  <img src="./countries.png" />
