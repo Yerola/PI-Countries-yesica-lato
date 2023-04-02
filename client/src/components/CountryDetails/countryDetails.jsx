@@ -8,7 +8,7 @@ export default function CountryDetails() {
     const [country, setCountry] = useState(null);
     let { id } = useParams();
     useEffect(() => {
-        axios.get(`http://localhost:3001/api/country/${id}`)
+        axios.get(`/api/country/${id}`)
             .then((response) => {
                 setCountry(response.data)
             })
