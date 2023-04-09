@@ -23,7 +23,7 @@ const { conn, Country } = require('./src/db.js');
 const data = require('./src/data.json');
 
 // Syncing all the models at once.
-conn.sync({ alter: true }).then(async () => {
+conn.sync({ force: false }).then(async () => {
   try {
     let restCountriesDb = await Country.findAll()
     if (restCountriesDb.length === 0) {
