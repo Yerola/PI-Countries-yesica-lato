@@ -1,0 +1,100 @@
+.div{
+    font-size: 1.5em;
+    color: rgb(197, 155, 237);
+    margin-block: auto;
+    text-align-last: center;
+    margin: 4px 0px 7px 0px;
+    -webkit-text-stroke: 0.2px rgb(12, 12, 12);
+    width: auto;
+}
+
+.img{
+    display: inline;
+    width: auto;
+}
+
+.h1{
+    font-size: 2em;
+    color: rgb(197, 155, 237);
+    margin-block: auto;
+    -webkit-text-stroke: 1px rgb(12, 12, 12);
+}
+
+.h3{
+    margin: 24px 6px 0px -1px;
+}
+
+
+.select{
+    margin: 4px 0px -50px 0px;
+    background: rgb(4, 8, 38);
+    -webkit-text-stroke: 0.3px rgba(8, 7, 8, 0.639);
+    font-weight:bold;
+    cursor:pointer;
+    width: auto;
+    max-width: 410px;
+}
+
+.button{
+    background-image: linear-gradient(to bottom, rgb(9, 7, 99), #121313) ;
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #101010;
+    box-shadow: 6px 5px 24px #380577;
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 0.8em;
+    color: #fafdfd;
+    padding: 8px;
+    right: 300px;
+    top: 250px;
+    position: unset;
+    width: auto;
+    display: block;
+    border: none;
+    -webkit-text-stroke: 0.3px rgba(9, 9, 9, 0.639);
+    cursor:pointer;
+}
+
+  .button:hover{
+    background: rgb(9, 17, 79);
+    font-weight:bold;
+    width: auto;
+}
+
+  .link{
+      text-decoration: none;
+      width: auto;
+  }
+
+  .x{
+    background-image: linear-gradient(to bottom, rgb(11, 19, 124), #091669) ;
+    font-family: cursive;
+    font-style: oblique;
+    color: #873d82;
+    width: auto;
+    margin: 11px 0px 0px 0px;
+  }
+
+  .x:hover{
+    background: rgb(137, 74, 156);
+    font-weight:bold;
+    cursor:pointer;
+    width: auto;
+  }
+  
+  .disabled {
+  display: none;
+}
+
+@media screen and (max-width: 568px) {
+  img {
+    max-height: 50px;
+    max-width: 50px;
+    transform: translateX(0%) translateY(3%);
+    display: flex;
+    justify-content:center;
+    margin: 10px auto;
+    position: static;
+    display: block;
+  }
+}
