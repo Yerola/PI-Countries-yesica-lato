@@ -7,9 +7,10 @@ const routes = require('./routes/index.js');// Importo todas las rutas definidas
 require('./db.js');//Importo la configuración de la base de datos
 
 const server = express();//Creo una instancia de Express llamada "server".
-
+const cors = require('cors');
 server.name = 'API';//Se define el nombre del servidor como "API".
 
+server.use(cors());
 server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 //Agrega el middleware body-parser para analizar los cuerpos de las solicitudes entrantes en formato urlencoded.
 server.use(bodyParser.json({ limit: '50mb' }));
