@@ -1,0 +1,56 @@
+input{
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #101011;
+    box-shadow: 6px 5px 24px #100f0f;
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 2em;
+    color: #eee9e9;
+    padding: 12px;
+    right: 300px;
+    top: 250px;
+    position: unset;
+    border-left-width: medium;
+    background: local;
+    border: ridge;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    cursor:pointer;
+  }
+
+  input:hover{
+    background-image: linear-gradient(to bottom, rgba(24, 21, 108, 0.262), #061049);
+    font-weight:bold;
+  }
+
+  @media screen and (max-width: 768px) {
+input {
+  flex-direction: column;
+  align-items: flex-start;
+font-size: 1.5em;
+padding: 8px;
+right: auto;
+top: auto;
+position: relative;
+}
+}
+
+.rayita{
+      background-image: linear-gradient(to bottom, rgb(40, 41, 93), #01016d) ;
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #090c19;
+    box-shadow: 6px 5px 24px #0b071f;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 0.8em;
+    color: #fafafa;
+    padding: 8px;
+    border-left-width: medium;
+    display: block;
+    border: none;
+  }
+
+  .rayita:hover{
+    background: rgb(53, 21, 185);
+    opacity: 0.6;
+    font-weight:bold;
+  }
