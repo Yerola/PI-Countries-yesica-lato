@@ -30,3 +30,17 @@
 	background:rgb(7, 33, 178);
 	font-weight:bold;
 }
+
+.paginated li a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.paginated li a.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #ccc;
+}
+.paginated li a.disabled::before {
+  content: '\1F6AB';
+}
