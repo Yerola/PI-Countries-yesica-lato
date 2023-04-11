@@ -11,6 +11,10 @@ export default function SearchBar() {
 
     function onSubmit(e) {
         e.preventDefault();
+        if (search.trim() === '') {
+            alert('You must enter something please.');
+            return;
+        }
         const toSearch = search.toLowerCase();
         const validate = countriesAll.filter((el) =>
             el.name
