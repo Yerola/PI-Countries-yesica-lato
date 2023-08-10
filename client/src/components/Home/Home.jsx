@@ -51,8 +51,13 @@ export default function Home() {
 
     function handleOnclick(e) {
         e.preventDefault();
+        setCurrentPage(1);
         dispatch(fetchCountry())
     };
+
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [currentPage]);
 
     /*
     Defino una función llamada "handleOnclick" 
