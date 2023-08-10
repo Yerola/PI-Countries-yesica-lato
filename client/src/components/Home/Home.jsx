@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCountry } from '../../redux/action';
 import Country from "../Country/country";
@@ -59,6 +59,7 @@ export default function Home() {
         setCurrentPage(1);
     }, [currentPage]);
 
+    //TODO LINEA 58-59-60 RESUELVE CON EL useEffect ese error del paginado
     /*
     Defino una función llamada "handleOnclick" 
     que toma un evento "e" como argumento y llama a "fetchCountry" usando "dispatch". 
